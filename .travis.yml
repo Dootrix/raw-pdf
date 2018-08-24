@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+- 6.3.0
+- 10
+after_success:
+- 'cat ./coverage/lcov.info | ./node_modules/.bin/coveralls'
+# deploy:
+#   provider: npm
+#   email: steve.atkinson@dootrix.com
+#   api_key: $API_KEY
+#   skip_cleanup: true
+#   on:
+#     tags: true
+#     repo: dootrix/raw-pdf
+#     node: 6.3.0
