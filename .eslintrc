@@ -11,9 +11,11 @@
     "mocha": true
   },
   "extends": [
-    "es2015"
+    "es2015",
+    "eslint:recommended"
   ],
   "rules": {
-    "indent": ["error", 2]
+    "indent": ["error", 2],
+    "semi": ["error", "always"]
   }
 }
